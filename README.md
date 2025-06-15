@@ -59,23 +59,23 @@ Mientras ¬ganador hacer
 
 ```mermaid
 flowchart TD
-    A[Inicio] --> B{Leer nJug ≥ 3}
-    B --> C[Inicializar<br>posiciones a 0]
-    C --> D{¿Ganador?}
+    A[Inicio] --> B{Leer nJug >= 3}
+    B --> C[Inicializar posiciones en 0]
+    C --> D{Ganador?}
     D -- No --> E[Por cada jugador]
     E --> F[Esperar Enter]
     F --> G[Tirar dado 1-6]
-    G --> H[destino = pos+dado (máx 31)]
-    H --> I{¿Casilla especial?}
-    I -- Sí --> J[Actualizar a destino especial]
-    I -- No --> K[Posición = destino]
+    G --> H[destino = pos + dado (max 31)]
+    H --> I{Casilla especial?}
+    I -- Si --> J[Actualizar a destino especial]
+    I -- No --> K[Posicion = destino]
     J --> L[Mostrar tablero]
     K --> L
-    L --> M{¿pos = 31?}
-    M -- Sí --> N[Ganador anunciado]
+    L --> M{pos = 31?}
+    M -- Si --> N[Ganador anunciado]
     M -- No --> E
     N --> O[Fin]
-    D -- Sí --> O
+    D -- Si --> O
 ```
 
 ---
