@@ -182,7 +182,7 @@ int main(){
 | `pos[n]`       | Arreglo dinámico de enteros | Guarda la casilla actual de cada jugador.            |
 | Variables simples | `int`, `bool`            | Contadores, tirada de dado, banderas de control.     |
 
-> No se emplean vector, map, clases ni objetos, cumpliendo el paradigma exclusivamente procedimental.
+> No se emplean clases ni objetos, cumpliendo el paradigma exclusivamente procedimental.
 
 ---
 
